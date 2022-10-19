@@ -23,7 +23,7 @@ function App() {
       body: "# Type your note here",
     };
     setNotes((prevNotes) => [newNote, ...prevNotes]);
-    // setCurrentNoteId(newNote.id);
+    setCurrentNoteId(newNote.id);
   }
 
   // to arrange the recent-modified note at the note
@@ -54,8 +54,9 @@ function App() {
   // }
 
   function deleteTask(event, noteId) {
+    console.log("Meooooooooow");
     event.stopPropagation();
-    setNotes((notes) => notes.filter((note) => note.id !== noteId));
+    setNotes((notes) => notes.filter((note) => noteId !== note.id));
   }
 
   function findCurrentNote() {

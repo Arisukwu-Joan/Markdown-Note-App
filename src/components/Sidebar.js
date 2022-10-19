@@ -12,11 +12,11 @@ function Sidebar(props) {
         // onClick={() => props.setCurrentNoteId(note.id)}
       >
         <h4 className="text-snippet">{note.body.split("\n")[0]}</h4>
-        <button
-          className="button-btn"
-          onClick={(event) => props.deleteTask(event, note.id)}
-        >
-          <BsTrash className="trash-btn" />
+        <button className="button-btn">
+          <BsTrash
+            onClick={(event) => props.delete(event, note.id)}
+            className="trash-btn"
+          />
         </button>
       </div>
     </div>
