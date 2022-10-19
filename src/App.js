@@ -54,7 +54,6 @@ function App() {
   // }
 
   function deleteTask(event, noteId) {
-    console.log("Meooooooooow");
     event.stopPropagation();
     setNotes((notes) => notes.filter((note) => noteId !== note.id));
   }
