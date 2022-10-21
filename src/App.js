@@ -85,7 +85,7 @@ function App() {
           <div className="no-notes">
             <h1>You have no notes</h1>
             <button className="first-note" onClick={createNewNote}>
-              Create a Note
+              Click to Create Note
             </button>
           </div>
         )}

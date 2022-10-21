@@ -49,11 +49,12 @@ button:focus {
 
 .first-note {
     cursor: pointer;
-    /* background-color: #4A4E74; */
+    background-color: #4A4E74;
     border: none;
-    color: #4A4E74;
+    color: #fff;
     border-radius: 3px;
     padding: 1rem;
+    font-size: 15px;
 }
 
 .editor {
